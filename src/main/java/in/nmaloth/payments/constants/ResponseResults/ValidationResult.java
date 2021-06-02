@@ -7,14 +7,14 @@ public enum ValidationResult {
     VALIDATION_PASSED("2")
     ;
 
-    private String cvcValidationResult;
+    private String validationResult;
 
     ValidationResult(String validationResult){
-        this.cvcValidationResult = validationResult;
+        this.validationResult = validationResult;
     }
 
     public String getCvcValidationResult() {
-        return cvcValidationResult;
+        return validationResult;
     }
 
     public ValidationResult identify(String cvcValidationResult){
