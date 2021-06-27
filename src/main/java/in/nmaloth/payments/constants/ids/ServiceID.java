@@ -11,6 +11,7 @@ public class ServiceID {
     public static final String CRYPTO_SERVICE = "CRYPTO_SERVICE";
     public static final String SCRIPT_GENERATION_SERVICE = "SCRIPT";
     public static final String AGGREGATOR = "AGGREGATOR";
+    public static final String PARAMETER_VALIDATOR = "PARAMETER_VALIDATOR";
 
 
 

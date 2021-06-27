@@ -13,12 +13,12 @@ public enum ValidationResult {
         this.validationResult = validationResult;
     }
 
-    public String getCvcValidationResult() {
+    public String getValidationResult() {
         return validationResult;
     }
 
-    public ValidationResult identify(String cvcValidationResult){
-        switch (cvcValidationResult){
+    public static ValidationResult identify(String validationResult){
+        switch (validationResult){
             case "1": return VALIDATION_FAILED;
             case "2": return VALIDATION_PASSED;
             default: return VALIDATION_NOT_DONE;

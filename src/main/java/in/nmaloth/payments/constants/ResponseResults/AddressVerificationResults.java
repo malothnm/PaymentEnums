@@ -23,7 +23,7 @@ public enum AddressVerificationResults {
         return addressVerificationResult;
     }
 
-    public  AddressVerificationResults identify(String addressVerificationResult){
+    public  static AddressVerificationResults identify(String addressVerificationResult){
         switch (addressVerificationResult){
             case "A": return ADDRESS_MATCH_ZIP_CODE_NO_MATCH;
             case "B": return STREET_ADDRESS_MATCH_POSTAL_CODE_NOT_VERIFIED;
