@@ -21,4 +21,7 @@ public enum AFD {
         }
         return AFD_NO_PRESENT;
     }
+
+
+
 }
