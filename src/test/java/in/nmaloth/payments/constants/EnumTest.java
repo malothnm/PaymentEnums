@@ -1,5 +1,6 @@
 package in.nmaloth.payments.constants;
 
+import in.nmaloth.payments.keys.constants.CVCType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package in.nmaloth.payments.constants;
+package in.nmaloth.payments.keys.constants;
 
 public enum PinBlockFormat {
 

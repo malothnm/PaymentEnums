@@ -1,4 +1,4 @@
-package in.nmaloth.payments.constants;
+package in.nmaloth.payments.keys.constants;
 
 public enum CVCType {
 
@@ -6,7 +6,7 @@ public enum CVCType {
     CVC2("1"),
     DYNAMIC_CVC2("2"),
     CVC3("3"),
-    CAVV("4")
+    CVV_3D("4")
 
     ;
 
@@ -26,7 +26,7 @@ public enum CVCType {
             case "1": return CVCType.CVC2;
             case "2": return CVCType.DYNAMIC_CVC2;
             case "3": return CVCType.CVC3;
-            default: return CVCType.CAVV;
+            default: return CVCType.CVV_3D;
         }
     }
 }
