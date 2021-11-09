@@ -18,6 +18,7 @@ public class ServiceID {
     public static final String SCRIPT_GENERATION_SERVICE = "SCRIPT";
     public static final String AGGREGATOR = "AGGREGATOR";
     public static final String PARAMETER_VALIDATOR = "PARAMETER_VALIDATOR";
+    public static final String NO_VALIDATION = "NO_VALIDATION";
 
 
 
