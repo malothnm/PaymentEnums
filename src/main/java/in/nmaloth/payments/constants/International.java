@@ -1,14 +1,20 @@
 package in.nmaloth.payments.constants;
 
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public enum International {
 
     INTERNATIONAL("0"),
     DOMESTIC("1");
 
+
+
     private String international;
+
+    private static final Logger log = LoggerFactory.getLogger(International.class);
+
 
     International(String international){
         this.international = international;

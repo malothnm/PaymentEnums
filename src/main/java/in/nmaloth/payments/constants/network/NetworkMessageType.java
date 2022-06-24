@@ -7,7 +7,8 @@ public enum NetworkMessageType {
     GROUP_SIGN_ON,
     GROUP_SIGN_OFF,
     ECHO,
-    NO_MESSAGE
+    NO_MESSAGE,
+    KEY_EXCHANGE
 
 
     ;

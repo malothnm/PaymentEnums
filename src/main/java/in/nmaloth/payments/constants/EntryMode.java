@@ -1,12 +1,13 @@
 package in.nmaloth.payments.constants;
 
-import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-@Slf4j
 public enum EntryMode {
 
     UNKNOWN("0"),
@@ -30,6 +31,8 @@ public enum EntryMode {
     CHEQUE("I");
 
     private String entryMode;
+
+    private static final Logger log = LoggerFactory.getLogger(EntryMode.class);
 
     EntryMode(String entryMode){
         this.entryMode = entryMode;

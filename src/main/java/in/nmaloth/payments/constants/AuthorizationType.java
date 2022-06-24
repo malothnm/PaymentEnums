@@ -1,12 +1,12 @@
 package in.nmaloth.payments.constants;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-@Slf4j
 public enum AuthorizationType {
 
     AUTH("0"),
@@ -18,6 +18,8 @@ public enum AuthorizationType {
     REVERSAL_ADVICE("6");
 
     private String authorizationType;
+
+    private static final Logger log = LoggerFactory.getLogger(AuthorizationType.class);
 
     AuthorizationType (String authorizationType){
         this.authorizationType = authorizationType;

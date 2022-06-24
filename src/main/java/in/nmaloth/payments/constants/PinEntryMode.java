@@ -1,12 +1,13 @@
 package in.nmaloth.payments.constants;
 
-import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-@Slf4j
 public enum  PinEntryMode {
 
     NO_PIN("0"),
@@ -14,6 +15,9 @@ public enum  PinEntryMode {
     OFFLINE_PIN("2");
 
     private String pinEntryMode;
+
+    private static final Logger log = LoggerFactory.getLogger(PinEntryMode.class);
+
 
     PinEntryMode(String pinEntryMode){
         this.pinEntryMode = pinEntryMode;

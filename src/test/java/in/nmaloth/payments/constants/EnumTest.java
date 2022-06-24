@@ -228,26 +228,26 @@ class EnumTest {
 
         assertArrayEquals(transactionTypeStringArray,transactionTypeStringArrayResult);
     }
-
-    @Test
-    void hsmCommand() {
-
-        String[] hsmCommandArray = new String[]{"0","1","2","3","4","5","6","7","8","9","10","11","30"
-        } ;
-        HSMCommand[] hsmCommands = new HSMCommand[hsmCommandArray.length];
-
-        for (int i = 0; i < hsmCommandArray.length ; i ++ ) {
-            hsmCommands[i] = HSMCommand.identify(hsmCommandArray[i]);
-        }
-
-        String[] hsmCommandStringArrayResult = new String[hsmCommands.length];
-
-        for (int i = 0; i < hsmCommands.length; i ++ ){
-            hsmCommandStringArrayResult[i] = hsmCommands[i].getHsmCommand();
-        }
-
-        assertArrayEquals(hsmCommandArray,hsmCommandStringArrayResult);
-    }
+//
+//    @Test
+//    void hsmCommand() {
+//
+//        String[] hsmCommandArray = new String[]{"0","1","2","3","4","5","6","7","8","9","10","11","30"
+//        } ;
+//        HSMCommand[] hsmCommands = new HSMCommand[hsmCommandArray.length];
+//
+//        for (int i = 0; i < hsmCommandArray.length ; i ++ ) {
+//            hsmCommands[i] = HSMCommand.identify(hsmCommandArray[i]);
+//        }
+//
+//        String[] hsmCommandStringArrayResult = new String[hsmCommands.length];
+//
+//        for (int i = 0; i < hsmCommands.length; i ++ ){
+//            hsmCommandStringArrayResult[i] = hsmCommands[i].getHsmCommand();
+//        }
+//
+//        assertArrayEquals(hsmCommandArray,hsmCommandStringArrayResult);
+//    }
 
     @Test
     void cvcType() {
